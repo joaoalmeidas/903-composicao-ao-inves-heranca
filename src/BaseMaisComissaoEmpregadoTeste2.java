@@ -7,15 +7,15 @@ public class BaseMaisComissaoEmpregadoTeste2 {
 		
 		System.out.println("Dados do empregado obtidos através dos métodos get().");
 		
-		System.out.printf("%n%s %s%n", "O nome é", empregado.getNome());
+		System.out.printf("%n%s %s%n", "O nome é", empregado.getComissao().getNome());
 		
-		System.out.printf("%n%s %s%n", "O sobrenome é", empregado.getSobrenome());
+		System.out.printf("%n%s %s%n", "O sobrenome é", empregado.getComissao().getSobrenome());
 		
-		System.out.printf("%n%s %s%n", "O CPF é", empregado.getNumeroSeguroSocial());
+		System.out.printf("%n%s %s%n", "O CPF é", empregado.getComissao().getNumeroSeguroSocial());
 
-		System.out.printf("%s %.2f%n", "O total de vendas é", empregado.getVendasBrutas());
+		System.out.printf("%s %.2f%n", "O total de vendas é", empregado.getComissao().getVendasBrutas());
 		
-		System.out.printf("%s %.2f%n", "A taxa de comissão é", empregado.getTaxaDeComissao());
+		System.out.printf("%s %.2f%n", "A taxa de comissão é", empregado.getComissao().getTaxaDeComissao());
 		
 		System.out.printf("%s %.2f%n", "O salário base é", empregado.getSalarioBase());
 		
