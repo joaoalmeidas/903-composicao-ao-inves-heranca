@@ -27,10 +27,9 @@ public class BaseMaisComissaoEmpregado2{
 	}
 	
 	
-	@Override
 	public double ganhos() {
 		
-		return getSalarioBase() + super.ganhos();
+		return getSalarioBase() + comissao.ganhos();
 		
 	}
 	
