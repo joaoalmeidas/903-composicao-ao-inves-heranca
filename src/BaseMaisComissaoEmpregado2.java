@@ -26,10 +26,17 @@ public class BaseMaisComissaoEmpregado2{
 		this.salarioBase = salarioBase;
 	}
 	
-	
+	public ComissaoEmpregado getComissao() {
+		return comissao;
+	}
+
+	public void setComissao(ComissaoEmpregado comissao) {
+		this.comissao = comissao;
+	}
+
 	public double ganhos() {
 		
-		return getSalarioBase() + comissao.ganhos();
+		return getSalarioBase() + getComissao().ganhos();
 		
 	}
 	
