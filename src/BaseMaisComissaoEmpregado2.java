@@ -43,7 +43,7 @@ public class BaseMaisComissaoEmpregado2{
 	@Override
 	public String toString() {
 		
-		return String.format("%s %s%n%s: %.2f", "Empregado salário base", super.toString(), "Salário Base", getSalarioBase());
+		return String.format("%s %s%n%s: %.2f", "Empregado salário base", getComissao().toString(), "Salário Base", getSalarioBase());
 		
 	}
 	
